@@ -1,10 +1,9 @@
-<div class="list-group">
 <ul class="navbar-nav ml-auto">
     <!-- Authentication Links -->
     @guest
         @if (Route::has('login'))
             <li class="nav-item">
-                <a class="nav-link text-center" href="{{ route('login') }}">{{ __('Login') }}</a>
+                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
             </li>
         @endif
 
@@ -34,7 +33,7 @@
     @endguest
 </ul>
 
-</div>
+
 
 <div class="list-group">
     <!--tips: add .list-group-flush to the .list-group to remove some borders and rounded corners-->

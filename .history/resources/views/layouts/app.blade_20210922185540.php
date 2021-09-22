@@ -14,7 +14,7 @@
 <body>
 @include('blocks.menu')
 
-@if (Request::is(['head','about']))
+@if (Request::is('head'))
 
    @include('blocks.jumbotron')
 @endif
