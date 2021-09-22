@@ -14,7 +14,7 @@
 <body>
 @include('blocks.menu')
 
-@if (Request::is(['head','about']))
+@if (Request::is('head'))
 
    @include('blocks.jumbotron')
 @endif
@@ -25,7 +25,7 @@
 <div class="container-fluid table-bordered">
     <div class="row">
         <div class="col-3">@yield('left-blog')  @include('blocks.left') </div>
-        <div class="col-6">
+        <div class="col-9">
 
 
 
@@ -39,8 +39,8 @@
             <div class="text-center"> @yield('centertop') </div>
             @yield('content')
         </div>
-         <div class="col-3 mt-4"> @yield('right-blog') {{-- @include('blocks.right') --}}</div>
-
+        {{-- <div class="col-2">@include('blocks.right')</div>
+ --}}
     </div>
 </div>
    @include('blocks.footer')

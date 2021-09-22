@@ -1,8 +1,8 @@
 @extends('layouts.app')
 @section('title-blog') Yangiliklar sahifasi @endsection
 @section('breadcrumb') Yangiliklar @endsection
-@section('right-blog')
-@include('news.right')
+@section('left-blog')
+
 @endsection
 
 @section('content')
