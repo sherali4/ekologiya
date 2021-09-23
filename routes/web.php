@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::post('image', 'ImageController@upload')->name('image');
+/* Route::get('default', function () {
+    return view('default');
+})->name('default'); */
+
+
 Route::get('/', function () {
     return view('welcome');
 })->name('bosh');

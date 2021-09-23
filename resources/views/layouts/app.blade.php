@@ -12,6 +12,7 @@
         <title>@yield('title-blog')</title>
 </head>
 <body>
+    
 @include('blocks.menu')
 
 @if (Request::is(['head','about']))
@@ -22,26 +23,35 @@
 
 @include('blocks.marque')
 
-<div class="container-fluid table-bordered">
+<div class="container container-fluid">
     <div class="row">
         <div class="col-3">@yield('left-blog')  @include('blocks.left') </div>
-        <div class="col-6">
-
-
-
-{{-- @if (Request::is('main'))
-@include('blocks.jumbotron')
-@endif --}}
-
+        
+        
+        @if (Request::is(['press','vvp','report','about','ruyxat','hujjat']))
+        <div class="col-9">
             @include('blocks.breadcrumb')
-
-
+            <div class="text-center"> @yield('centertop') </div>
+            @yield('content')
+        </div>
+         
+    </div>
+         
+   @else
+    <div class="col-6">
+            @include('blocks.breadcrumb')
             <div class="text-center"> @yield('centertop') </div>
             @yield('content')
         </div>
          <div class="col-3 mt-4"> @yield('right-blog') {{-- @include('blocks.right') --}}</div>
 
     </div>
+       
+  
+@endif
+        
+        
+       
 </div>
    @include('blocks.footer')
 </body>

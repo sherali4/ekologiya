@@ -1,4 +1,4 @@
-<div class="list-group">
+{{-- <div class="list-group">
 <ul class="navbar-nav ml-auto">
     <!-- Authentication Links -->
     @guest
@@ -34,7 +34,7 @@
     @endguest
 </ul>
 
-</div>
+</div> --}}
 
 <div class="list-group">
     <!--tips: add .list-group-flush to the .list-group to remove some borders and rounded corners-->

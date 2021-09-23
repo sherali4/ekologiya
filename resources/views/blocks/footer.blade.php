@@ -1,5 +1,5 @@
 <!-- FOOTER.begin -->
-<footer class="bd-footer py-0 mt-0 bg-light">
+<footer class="bd-footer bg-light">
     <div class="container py-3">
       <div class="row">
         <div class="col-lg-3 mb-0">
